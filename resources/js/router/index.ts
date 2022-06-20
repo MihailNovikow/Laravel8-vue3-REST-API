@@ -1,32 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import BookIndex from '../components/books/BookIndex.vue';
-import BookShow from '../components/books/BookShow.vue';
-import BookCreate from '../components/books/BookCreate.vue';
-import BookEdit from '../components/books/BookEdit.vue';
+import EquipmentIndex from '../components/equipments/EquipmentIndex.vue';
+import EuipmentShow from '../components/equipments/EquipmentShow.vue';
+import EquipmentCreate from '../components/equipments/EquipmentCreate.vue';
+import EquipmentEdit from '../components/equipments/EquipmentEdit.vue';
 
 const routes = [
     {
         path: '/home',
-        name: 'books.index',
-        component: BookIndex
+        name: 'equipments.index',
+        component: EquipmentIndex
     },
     {
-        path: '/books/:id/show',
-        name: 'books.show',
-        component: BookShow,
+        path: '/equipments/:id/show',
+        name: 'equipments.show',
+        component: EuipmentShow,
         props: true
     },
     {
-        path: '/books/:id/edit',
-        name: 'books.edit',
-        component: BookEdit,
+        path: '/equipments/:id/edit',
+        name: 'equipments.edit',
+        component: EquipmentEdit,
         props: true
     },
     {
-        path: '/books/create',
-        name: 'books.create',
-        component: BookCreate,
+        path: '/equipments/create',
+        name: 'equipments.create',
+        component: EquipmentCreate,
     },
     { path: "/:pathMatch(.*)", component: { template: "Not found"} }
 ];

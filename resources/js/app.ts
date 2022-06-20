@@ -1,11 +1,12 @@
 require('./bootstrap');
 
 import { createApp } from "vue";
-import router from './router';
-import BookIndex from './components/books/BookIndex.vue';
-
+import router from './router/index';
+import EquipmentIndex from './components/equipments/EquipmentIndex.vue';
+import Search from './components/equipments/Search.vue'
 const app = createApp({
     components: {
-        BookIndex,
+        EquipmentIndex,
+        Search,
     },
 }).use(router).mount('#app')

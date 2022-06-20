@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\BookController;
+use App\Http\Controllers\Api\EquipmentController;
+use App\Http\Controllers\Api\EquipmentTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,9 @@ use App\Http\Controllers\Api\BookController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::apiResource('books', BookController::class);
+Route::apiResource('equipments', EquipmentController::class);
+
+Route::apiResource('equipment-type', EquipmentTypeController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
