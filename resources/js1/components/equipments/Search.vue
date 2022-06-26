@@ -1,5 +1,5 @@
 <template>
-<div serialnum="app">
+
    <div class="panel panel-default">
    <div class="panel-heading">
          <strong> All equipments</strong></div>
@@ -24,7 +24,7 @@
             </table>
         </div>
    </div>
-   </div>
+   
    </template>
    <script>
 import getEquipments from '../../composables/equipments';
